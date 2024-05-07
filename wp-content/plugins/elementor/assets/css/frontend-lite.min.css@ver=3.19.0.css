@@ -83,7 +83,7 @@
     padding-block-start: 10px;
     display: flex;
     justify-content: flex-end;
-    gap: 15px
+    gap: 15px;
 }
 
 .dialog-type-alert .dialog-buttons-wrapper .dialog-button,
