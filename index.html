@@ -1915,498 +1915,498 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 							</div>
 						</div>
 					</section>
-					<section
-						class="elementor-section elementor-top-section elementor-element elementor-element-b60b7f3 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-						data-id="b60b7f3" data-element_type="section"
-						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;split&quot;}">
-						<div class="elementor-background-overlay"></div>
-						<div class="elementor-shape elementor-shape-bottom" data-negative="false">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20"
-								preserveAspectRatio="none">
-								<path class="elementor-shape-fill"
-									d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z" />
-							</svg> </div>
-						<div class="elementor-container elementor-column-gap-default">
-							<div
-								class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-370a95a animated-slow elementor-invisible"
-								data-id="370a95a" data-element_type="column"
-								data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div
-										class="elementor-element elementor-element-865313c elementor-widget elementor-widget-metform"
-										data-id="865313c" data-element_type="widget"
-										data-widget_type="metform.default">
-										<div class="elementor-widget-container">
-											<div id="mf-response-props-id-331" data-previous-steps-style
-												data-editswitchopen data-response_type="alert"
-												data-erroricon="fas fa-exclamation-triangle"
-												data-successicon="fas fa-check" data-messageposition="top"
-												class="   mf-scroll-top-no">
-												<div class="formpicker_warper formpicker_warper_editable"
-													data-metform-formpicker-key="331">
-
-													<div class="elementor-widget-container">
-
-														<div
-															id="metform-wrap-865313c-331"
-															class="mf-form-wrapper"
-															data-form-id="331"
-															data-action="https://kitpro.site/nacotta/wp-json/metform/v1/entries/insert/331"
-															data-wp-nonce="340cdb45f2"
-															data-form-nonce="51757d6338"
-															data-quiz-summery="false"
-															data-save-progress="false"
-															data-form-type="general-form"
-															data-stop-vertical-effect></div>
-
-														<!----------------------------- 
-			* controls_data : find the the props passed indie of data attribute
-			* props.SubmitResponseMarkup : contains the markup of error or success message
-			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-		--------------------------- -->
-
-														<script type="text/mf" class="mf-template">
-			function controls_data (value){
-				let currentWrapper = "mf-response-props-id-331";
-				let currentEl = document.getElementById(currentWrapper);
-				
-				return currentEl ? currentEl.dataset[value] : false
-			}
-
-
-			let is_edit_mode = '' ? true : false;
-			let message_position = controls_data('messageposition') || 'top';
-
-			
-			let message_successIcon = controls_data('successicon') || '';
-			let message_errorIcon = controls_data('erroricon') || '';
-			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
-			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
-			
-			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
-
-			
-			return html`
-				<form
-					className="metform-form-content"
-					ref=${parent.formContainerRef}
-					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
-				
-					>
-			
-			
-					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-
-					<!--------------------------------------------------------
-					*** IMPORTANT / DANGEROUS ***
-					${html``} must be used as in immediate child of "metform-form-main-wrapper"
-					class otherwise multistep form will not run at all
-					---------------------------------------------------------->
-
-					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
-					${html`
-								<div data-elementor-type="wp-post" key="2" data-elementor-id="331" className="elementor elementor-331">
-						<section className="elementor-section elementor-top-section elementor-element elementor-element-fc6e04b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc6e04b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8d7fdd" data-id="f8d7fdd" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-						<div className="elementor-element elementor-element-13808a5 elementor-widget elementor-widget-mf-select" data-id="13808a5" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-select&quot;,&quot;mf_input_list&quot;:[{&quot;mf_input_option_text&quot;:&quot;Cottages Mountain&quot;,&quot;mf_input_option_value&quot;:&quot;value-1&quot;,&quot;_id&quot;:&quot;0146ffa&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;mf_input_option_text&quot;:&quot;Cottages Nature&quot;,&quot;mf_input_option_value&quot;:&quot;value-2&quot;,&quot;_id&quot;:&quot;86a01d2&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;mf_input_option_text&quot;:&quot;Cottages Lake&quot;,&quot;mf_input_option_value&quot;:&quot;value-3&quot;,&quot;_id&quot;:&quot;c43d428&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;}]}" data-widget_type="mf-select.default">
-				<div className="elementor-widget-container">
-			
-		
-		<div className="mf-input-wrapper">
-			
-            <${props.Select}
-                className=${"mf-input mf-input-select  " + ( validation.errors['mf-select'] ? 'mf-invalid' : '' )}
-                classNamePrefix="mf_select"
-                name="mf-select"
-                placeholder="${ parent.decodeEntities(`Cottages Spots`) } "
-                isSearchable=${false}
-                options=${[{"label":"Cottages Mountain","value":"value-1","isDisabled":false},{"label":"Cottages Nature","value":"value-2","isDisabled":false},{"label":"Cottages Lake","value":"value-3","isDisabled":false}]}
-                value=${parent.getValue("mf-select") ? [{"label":"Cottages Mountain","value":"value-1","isDisabled":false},{"label":"Cottages Nature","value":"value-2","isDisabled":false},{"label":"Cottages Lake","value":"value-3","isDisabled":false}].filter(item => item.value === parent.getValue("mf-select"))[0] : []}
-                onChange=${(e)=> parent.handleSelect(e, "mf-select")}
-                ref=${() => {
-				                    register({ name: "mf-select" }, parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false}));
-                    if ( parent.getValue("mf-select") === '' && false ) {
-				    parent.setValue( 'mf-select', '', true );
-                        parent.handleChange({
-                            target: {
-                                name: 'mf-select',
-                                value: ''
-                            }
-                        });
-                    }
-                }}
-                />
-
-            				<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-select"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-								</div>
-
-		
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-21aecdb elementor-widget elementor-widget-mf-number" data-id="21aecdb" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-number&quot;}" data-widget_type="mf-number.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-			
-			<input
-				type="number"
-				step="any"
-				className="mf-input "
-				id="mf-input-mobile-21aecdb"
-				name="mf-number"
-				placeholder="${ parent.decodeEntities(`Number Of Guest`) } "
-									onInput=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-number'] ? 'true' : 'false'}
-					ref=${el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
-								/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-number"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-			
-					</div>
-
-				</div>
-				</div>
-				<section className="elementor-section elementor-inner-section elementor-element elementor-element-187a32d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="187a32d" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fc46ccc" data-id="fc46ccc" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-						<div className="elementor-element elementor-element-4ee1eb3 elementor-widget elementor-widget-mf-date" data-id="4ee1eb3" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-date&quot;}" data-widget_type="mf-date.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-			
-			<${props.Flatpickr}
-					name="mf-date"
-					className="mf-input mf-date-input mf-left-parent "
-					placeholder="${ parent.decodeEntities(`Check-in`) } "
-					options=${{"minDate":"","maxDate":"","dateFormat":"m-d-Y","enableTime":"","disable":[],"mode":"single","static":true,"disableMobile":true,"time_24hr":false}}
-					value=${parent.getValue('mf-date')}
-					onInput=${parent.handleDateTime}
-					aria-invalid=${validation.errors['mf-date'] ? 'true' : 'false'}
-					ref=${el => props.DateWidget(
-							el, 
-							'', 
-							{"message":"This field is required.","required":false},  
-							register, 
-							parent 
-						)}
-					/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-date"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-								</div>
-
-		
-				</div>
-				</div>
-					</div>
-		</div>
-				<div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c881481" data-id="c881481" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-						<div className="elementor-element elementor-element-08a0fec elementor-widget elementor-widget-mf-date" data-id="08a0fec" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-date&quot;}" data-widget_type="mf-date.default">
-				<div className="elementor-widget-container">
-					
-		<div className="mf-input-wrapper">
-			
-			<${props.Flatpickr}
-					name="mf-date"
-					className="mf-input mf-date-input mf-left-parent "
-					placeholder="${ parent.decodeEntities(`Check-out`) } "
-					options=${{"minDate":"","maxDate":"","dateFormat":"m-d-Y","enableTime":"","disable":[],"mode":"single","static":true,"disableMobile":true,"time_24hr":false}}
-					value=${parent.getValue('mf-date')}
-					onInput=${parent.handleDateTime}
-					aria-invalid=${validation.errors['mf-date'] ? 'true' : 'false'}
-					ref=${el => props.DateWidget(
-							el, 
-							'', 
-							{"message":"This field is required.","required":false},  
-							register, 
-							parent 
-						)}
-					/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-date"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-								</div>
-
-		
-				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<div className="elementor-element elementor-element-468fd21 elementor-widget elementor-widget-mf-textarea" data-id="468fd21" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-textarea&quot;}" data-widget_type="mf-textarea.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-			
-			<textarea className="mf-input mf-textarea " id="mf-input-text-area-468fd21"
-				name="mf-textarea" 
-				placeholder="${ parent.decodeEntities(`Message`) } "
-				cols="30" rows="10"
-									onInput=${ parent.handleChange }
-					aria-invalid=${validation.errors['mf-textarea'] ? 'true' : 'false'}
-					ref=${ el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
-								></textarea>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-textarea"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-								</div>
-
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-ab0b3f8 mf-btn--left mf-btn--mobile-justify elementor-widget elementor-widget-mf-button" data-id="ab0b3f8" data-element_type="widget" data-widget_type="mf-button.default">
-				<div className="elementor-widget-container">
-					<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
-							<button type="submit" className="metform-btn metform-submit-btn " id="">
-					<span>${ parent.decodeEntities(`Submit Button`) } </span>
-				</button>
-			        </div>
-        		</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-							`}
-					</div>
-
-					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-				
-				</form>
-			`
-		</script>
-
-													</div>
-												</div>
-											</div> </div>
-									</div>
-								</div>
-							</div>
-							<div
-								class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3ada83c"
-								data-id="3ada83c" data-element_type="column">
-								<div class="elementor-widget-wrap elementor-element-populated">
-									<div
-										class="elementor-element elementor-element-3982e50 animated-slow elementor-invisible elementor-widget elementor-widget-elementskit-heading"
-										data-id="3982e50" data-element_type="widget"
-										data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}"
-										data-widget_type="elementskit-heading.default">
-										<div class="elementor-widget-container">
-											<div class="ekit-wid-con"><div
-													class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-text_center"><h2
-														class="ekit-heading--title elementskit-section-title ">Experience
-														<span><span>Luxury</span></span> In The Cottage</h2></div></div>
-										</div>
-									</div>
-									<div
-										class="elementor-element elementor-element-965cba7 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor"
-										data-id="965cba7" data-element_type="widget"
-										data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
-										data-widget_type="text-editor.default">
-										<div class="elementor-widget-container">
-											<p>Experience luxury in the serene settings of the Cottage, a part of
-												the Guide Kadalundi chain of resorts nestled in and around the
-												picturesque Kadalundi region. Immerse yourself in the tranquil
-												beauty
-												of nature as you embark on a journey filled with boating adventures,
-												captivating visits to the mangrove forests, and explorations of the
-												historic Beypore port. Our resort offers an array of experiences,
-												including team-building activities amidst the breathtaking
-												landscapes, ensuring a truly unforgettable getaway for all. Indulge
-												in the essence of luxury while surrendering to the natural wonders
-												of
-												Kadalundi with us.</p> </div>
-									</div>
-									<section
-										class="elementor-section elementor-inner-section elementor-element elementor-element-9c942ec elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-										data-id="9c942ec" data-element_type="section">
-										<div class="elementor-container elementor-column-gap-default">
-											<div
-												class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ec2760d"
-												data-id="ec2760d" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div
-														class="elementor-element elementor-element-98be51a elementor-mobile-align-center animated-slow elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list"
-														data-id="98be51a" data-element_type="widget"
-														data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:700}"
-														data-widget_type="icon-list.default">
-														<div class="elementor-widget-container">
-															<link rel="stylesheet"
-																href="wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
-															<ul class="elementor-icon-list-items">
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-icon">
-																		<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>
-																	</span>
-																	<span class="elementor-icon-list-text">Our Cottages</span>
-																</li>
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-icon">
-																		<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>
-																	</span>
-																	<span class="elementor-icon-list-text">Blogs</span>
-																</li>
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-icon">
-																		<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>
-																	</span>
-																	<span class="elementor-icon-list-text">Mangrove forest visit
-																	</span>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div
-												class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a09213f elementor-hidden-tablet"
-												data-id="a09213f" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div
-														class="elementor-element elementor-element-e7a4f13 elementor-mobile-align-center animated-slow elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list"
-														data-id="e7a4f13" data-element_type="widget"
-														data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:900}"
-														data-widget_type="icon-list.default">
-														<div class="elementor-widget-container">
-															<ul class="elementor-icon-list-items">
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-icon">
-																		<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>
-																	</span>
-																	<span class="elementor-icon-list-text">Outbound With
-																		Team</span>
-																</li>
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-icon">
-																		<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>
-																	</span>
-																	<span class="elementor-icon-list-text">cupidatat non
-																		proident</span>
-																</li>
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-icon">
-																		<i aria-hidden="true" class="fas fa-arrow-circle-right"></i>
-																	</span>
-																	<span class="elementor-icon-list-text">Beypore port
-																		visit</span>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
-									<div
-										class="elementor-element elementor-element-79dbd7c elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-										data-id="79dbd7c" data-element_type="widget"
-										data-widget_type="divider.default">
-										<div class="elementor-widget-container">
-											<style>/*! elementor - v3.19.0 - 29-01-2024 */
-.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>
-											<div class="elementor-divider">
-												<span class="elementor-divider-separator">
-												</span>
-											</div>
-										</div>
-									</div>
-									<section
-										class="elementor-section elementor-inner-section elementor-element elementor-element-3a59c78 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-										data-id="3a59c78" data-element_type="section">
-										<div class="elementor-container elementor-column-gap-default">
-											<div
-												class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-48cca56"
-												data-id="48cca56" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div
-														class="elementor-element elementor-element-b9eb34a animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-														data-id="b9eb34a" data-element_type="widget"
-														data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1100}"
-														data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h4 class="elementor-heading-title elementor-size-default">Social
-																Media :</h4> </div>
-													</div>
-												</div>
-											</div>
-											<div
-												class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-51ae3ae"
-												data-id="51ae3ae" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div
-														class="elementor-element elementor-element-47ebe0e e-grid-align-right animated-slow elementor-shape-rounded elementor-grid-0 elementor-invisible elementor-widget elementor-widget-social-icons"
-														data-id="47ebe0e" data-element_type="widget"
-														data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1300}"
-														data-widget_type="social-icons.default">
-														<div class="elementor-widget-container">
-															<style>/*! elementor - v3.19.0 - 29-01-2024 */
-.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));height:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#69727d;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#69727d}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>
-															<div class="elementor-social-icons-wrapper elementor-grid">
-																<span class="elementor-grid-item">
-																	<a
-																		class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-c07fd74"
-																		target="_blank">
-																		<span class="elementor-screen-only">Facebook</span>
-																		<i class="fab fa-facebook"></i> </a>
-																</span>
-																<span class="elementor-grid-item">
-																	<a href="https://wa.me/919847692052"
-																		class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-c3e9908"
-																		target="_blank">
-																		<span class="elementor-screen-only">WhatsApp</span>
-																		<i class="fab fa-whatsapp"></i> </a>
-																</span>
-																<span class="elementor-grid-item">
-																	<a
-																		class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5718aaa"
-																		target="_blank">
-
-																		<span class="elementor-screen-only">Youtube</span>
-																		<i class="fab fa-youtube"></i> </a>
-																</span>
-																<span class="elementor-grid-item">
-																	<a
-																		class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5718aaa"
-																		target="_blank">
-																		<span class="elementor-screen-only">Instagarm</span>
-																		<i class="fab fa-instagram"></i> </a>
-																</span>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
-								</div>
-							</div>
-						</div>
-					</section>
+					<!-- <section -->
+						<!-- class="elementor-section elementor-top-section elementor-element elementor-element-b60b7f3 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" -->
+						<!-- data-id="b60b7f3" data-element_type="section" -->
+						<!-- data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;split&quot;}"> -->
+						<!-- <div class="elementor-background-overlay"></div> -->
+						<!-- <div class="elementor-shape elementor-shape-bottom" data-negative="false"> -->
+							<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" -->
+								<!-- preserveAspectRatio="none"> -->
+								<!-- <path class="elementor-shape-fill" -->
+									<!-- d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z" /> -->
+							<!-- </svg> </div> -->
+						<!-- <div class="elementor-container elementor-column-gap-default"> -->
+							<!-- <div -->
+								<!-- class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-370a95a animated-slow elementor-invisible" -->
+								<!-- data-id="370a95a" data-element_type="column" -->
+								<!-- data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}"> -->
+								<!-- <div class="elementor-widget-wrap elementor-element-populated"> -->
+									<!-- <div -->
+										<!-- class="elementor-element elementor-element-865313c elementor-widget elementor-widget-metform" -->
+										<!-- data-id="865313c" data-element_type="widget" -->
+										<!-- data-widget_type="metform.default"> -->
+										<!-- <div class="elementor-widget-container"> -->
+											<!-- <div id="mf-response-props-id-331" data-previous-steps-style -->
+												<!-- data-editswitchopen data-response_type="alert" -->
+												<!-- data-erroricon="fas fa-exclamation-triangle" -->
+												<!-- data-successicon="fas fa-check" data-messageposition="top" -->
+												<!-- class="   mf-scroll-top-no"> -->
+												<!-- <div class="formpicker_warper formpicker_warper_editable" -->
+													<!-- data-metform-formpicker-key="331"> -->
+<!--  -->
+													<!-- <div class="elementor-widget-container"> -->
+<!--  -->
+														<!-- <div -->
+															<!-- id="metform-wrap-865313c-331" -->
+															<!-- class="mf-form-wrapper" -->
+															<!-- data-form-id="331" -->
+															<!-- data-action="https://kitpro.site/nacotta/wp-json/metform/v1/entries/insert/331" -->
+															<!-- data-wp-nonce="340cdb45f2" -->
+															<!-- data-form-nonce="51757d6338" -->
+															<!-- data-quiz-summery="false" -->
+															<!-- data-save-progress="false" -->
+															<!-- data-form-type="general-form" -->
+															<!-- data-stop-vertical-effect></div> -->
+<!--  -->
+														<!-- <!~~---------------------------  -->
+			<!-- * controls_data : find the the props passed indie of data attribute -->
+			<!-- * props.SubmitResponseMarkup : contains the markup of error or success message -->
+			<!-- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals -->
+		<!-- --------------------------- ~~> -->
+<!--  -->
+														<!-- <script type="text/mf" class="mf-template"> -->
+			<!-- function controls_data (value){ -->
+				<!-- let currentWrapper = "mf-response-props-id-331"; -->
+				<!-- let currentEl = document.getElementById(currentWrapper); -->
+				<!--  -->
+				<!-- return currentEl ? currentEl.dataset[value] : false -->
+			<!-- } -->
+<!--  -->
+<!--  -->
+			<!-- let is_edit_mode = '' ? true : false; -->
+			<!-- let message_position = controls_data('messageposition') || 'top'; -->
+<!--  -->
+			<!--  -->
+			<!-- let message_successIcon = controls_data('successicon') || ''; -->
+			<!-- let message_errorIcon = controls_data('erroricon') || ''; -->
+			<!-- let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false; -->
+			<!-- let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : ''; -->
+			<!--  -->
+			<!-- let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false; -->
+<!--  -->
+			<!--  -->
+			<!-- return html` -->
+				<!-- <form -->
+					<!-- className="metform-form-content" -->
+					<!-- ref=${parent.formContainerRef} -->
+					<!-- onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) } -->
+				<!--  -->
+					<!-- > -->
+			<!--  -->
+			<!--  -->
+					<!-- ${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''} -->
+					<!-- ${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''} -->
+<!--  -->
+					<!-- <!~~------------------------------------------------------ -->
+					<!-- *** IMPORTANT / DANGEROUS *** -->
+					<!-- ${html``} must be used as in immediate child of "metform-form-main-wrapper" -->
+					<!-- class otherwise multistep form will not run at all -->
+					<!-- --------------------------------------------------------~~> -->
+<!--  -->
+					<!-- <div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}> -->
+					<!-- ${html` -->
+								<!-- <div data-elementor-type="wp-post" key="2" data-elementor-id="331" className="elementor elementor-331"> -->
+						<!-- <section className="elementor-section elementor-top-section elementor-element elementor-element-fc6e04b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc6e04b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"> -->
+						<!-- <div className="elementor-container elementor-column-gap-default"> -->
+					<!-- <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8d7fdd" data-id="f8d7fdd" data-element_type="column"> -->
+			<!-- <div className="elementor-widget-wrap elementor-element-populated"> -->
+						<!-- <div className="elementor-element elementor-element-13808a5 elementor-widget elementor-widget-mf-select" data-id="13808a5" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-select&quot;,&quot;mf_input_list&quot;:[{&quot;mf_input_option_text&quot;:&quot;Cottages Mountain&quot;,&quot;mf_input_option_value&quot;:&quot;value-1&quot;,&quot;_id&quot;:&quot;0146ffa&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;mf_input_option_text&quot;:&quot;Cottages Nature&quot;,&quot;mf_input_option_value&quot;:&quot;value-2&quot;,&quot;_id&quot;:&quot;86a01d2&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;},{&quot;mf_input_option_text&quot;:&quot;Cottages Lake&quot;,&quot;mf_input_option_value&quot;:&quot;value-3&quot;,&quot;_id&quot;:&quot;c43d428&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;}]}" data-widget_type="mf-select.default"> -->
+				<!-- <div className="elementor-widget-container"> -->
+			<!--  -->
+		<!--  -->
+		<!-- <div className="mf-input-wrapper"> -->
+			<!--  -->
+            <!-- <${props.Select} -->
+                <!-- className=${"mf-input mf-input-select  " + ( validation.errors['mf-select'] ? 'mf-invalid' : '' )} -->
+                <!-- classNamePrefix="mf_select" -->
+                <!-- name="mf-select" -->
+                <!-- placeholder="${ parent.decodeEntities(`Cottages Spots`) } " -->
+                <!-- isSearchable=${false} -->
+                <!-- options=${[{"label":"Cottages Mountain","value":"value-1","isDisabled":false},{"label":"Cottages Nature","value":"value-2","isDisabled":false},{"label":"Cottages Lake","value":"value-3","isDisabled":false}]} -->
+                <!-- value=${parent.getValue("mf-select") ? [{"label":"Cottages Mountain","value":"value-1","isDisabled":false},{"label":"Cottages Nature","value":"value-2","isDisabled":false},{"label":"Cottages Lake","value":"value-3","isDisabled":false}].filter(item => item.value === parent.getValue("mf-select"))[0] : []} -->
+                <!-- onChange=${(e)=> parent.handleSelect(e, "mf-select")} -->
+                <!-- ref=${() => { -->
+				<!--                     register({ name: "mf-select" }, parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false})); -->
+                    <!-- if ( parent.getValue("mf-select") === '' && false ) { -->
+				<!--     parent.setValue( 'mf-select', '', true ); -->
+                        <!-- parent.handleChange({ -->
+                            <!-- target: { -->
+                                <!-- name: 'mf-select', -->
+                                <!-- value: '' -->
+                            <!-- } -->
+                        <!-- }); -->
+                    <!-- } -->
+                <!-- }} -->
+                <!-- /> -->
+<!--  -->
+            <!-- 				<${validation.ErrorMessage} -->
+					<!-- errors=${validation.errors} -->
+					<!-- name="mf-select" -->
+					<!-- as=${html`<span className="mf-error-message"></span>`} -->
+					<!-- /> -->
+								<!-- </div> -->
+<!--  -->
+		<!--  -->
+				<!-- </div> -->
+				<!-- </div> -->
+				<!-- <div className="elementor-element elementor-element-21aecdb elementor-widget elementor-widget-mf-number" data-id="21aecdb" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-number&quot;}" data-widget_type="mf-number.default"> -->
+				<!-- <div className="elementor-widget-container"> -->
+			<!--  -->
+		<!-- <div className="mf-input-wrapper"> -->
+			<!--  -->
+			<!-- <input -->
+				<!-- type="number" -->
+				<!-- step="any" -->
+				<!-- className="mf-input " -->
+				<!-- id="mf-input-mobile-21aecdb" -->
+				<!-- name="mf-number" -->
+				<!-- placeholder="${ parent.decodeEntities(`Number Of Guest`) } " -->
+									<!-- onInput=${parent.handleChange} -->
+					<!-- aria-invalid=${validation.errors['mf-number'] ? 'true' : 'false'} -->
+					<!-- ref=${el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)} -->
+								<!-- /> -->
+<!--  -->
+							<!-- <${validation.ErrorMessage} -->
+					<!-- errors=${validation.errors} -->
+					<!-- name="mf-number" -->
+					<!-- as=${html`<span className="mf-error-message"></span>`} -->
+					<!-- /> -->
+			<!--  -->
+					<!-- </div> -->
+<!--  -->
+				<!-- </div> -->
+				<!-- </div> -->
+				<!-- <section className="elementor-section elementor-inner-section elementor-element elementor-element-187a32d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="187a32d" data-element_type="section"> -->
+						<!-- <div className="elementor-container elementor-column-gap-default"> -->
+					<!-- <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fc46ccc" data-id="fc46ccc" data-element_type="column"> -->
+			<!-- <div className="elementor-widget-wrap elementor-element-populated"> -->
+						<!-- <div className="elementor-element elementor-element-4ee1eb3 elementor-widget elementor-widget-mf-date" data-id="4ee1eb3" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-date&quot;}" data-widget_type="mf-date.default"> -->
+				<!-- <div className="elementor-widget-container"> -->
+					<!--  -->
+		<!-- <div className="mf-input-wrapper"> -->
+			<!--  -->
+			<!-- <${props.Flatpickr} -->
+					<!-- name="mf-date" -->
+					<!-- className="mf-input mf-date-input mf-left-parent " -->
+					<!-- placeholder="${ parent.decodeEntities(`Check-in`) } " -->
+					<!-- options=${{"minDate":"","maxDate":"","dateFormat":"m-d-Y","enableTime":"","disable":[],"mode":"single","static":true,"disableMobile":true,"time_24hr":false}} -->
+					<!-- value=${parent.getValue('mf-date')} -->
+					<!-- onInput=${parent.handleDateTime} -->
+					<!-- aria-invalid=${validation.errors['mf-date'] ? 'true' : 'false'} -->
+					<!-- ref=${el => props.DateWidget( -->
+							<!-- el,  -->
+							<!-- '',  -->
+							<!-- {"message":"This field is required.","required":false},   -->
+							<!-- register,  -->
+							<!-- parent  -->
+						<!-- )} -->
+					<!-- /> -->
+<!--  -->
+							<!-- <${validation.ErrorMessage} -->
+					<!-- errors=${validation.errors} -->
+					<!-- name="mf-date" -->
+					<!-- as=${html`<span className="mf-error-message"></span>`} -->
+					<!-- /> -->
+								<!-- </div> -->
+<!--  -->
+		<!--  -->
+				<!-- </div> -->
+				<!-- </div> -->
+					<!-- </div> -->
+		<!-- </div> -->
+				<!-- <div className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c881481" data-id="c881481" data-element_type="column"> -->
+			<!-- <div className="elementor-widget-wrap elementor-element-populated"> -->
+						<!-- <div className="elementor-element elementor-element-08a0fec elementor-widget elementor-widget-mf-date" data-id="08a0fec" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-date&quot;}" data-widget_type="mf-date.default"> -->
+				<!-- <div className="elementor-widget-container"> -->
+					<!--  -->
+		<!-- <div className="mf-input-wrapper"> -->
+			<!--  -->
+			<!-- <${props.Flatpickr} -->
+					<!-- name="mf-date" -->
+					<!-- className="mf-input mf-date-input mf-left-parent " -->
+					<!-- placeholder="${ parent.decodeEntities(`Check-out`) } " -->
+					<!-- options=${{"minDate":"","maxDate":"","dateFormat":"m-d-Y","enableTime":"","disable":[],"mode":"single","static":true,"disableMobile":true,"time_24hr":false}} -->
+					<!-- value=${parent.getValue('mf-date')} -->
+					<!-- onInput=${parent.handleDateTime} -->
+					<!-- aria-invalid=${validation.errors['mf-date'] ? 'true' : 'false'} -->
+					<!-- ref=${el => props.DateWidget( -->
+							<!-- el,  -->
+							<!-- '',  -->
+							<!-- {"message":"This field is required.","required":false},   -->
+							<!-- register,  -->
+							<!-- parent  -->
+						<!-- )} -->
+					<!-- /> -->
+<!--  -->
+							<!-- <${validation.ErrorMessage} -->
+					<!-- errors=${validation.errors} -->
+					<!-- name="mf-date" -->
+					<!-- as=${html`<span className="mf-error-message"></span>`} -->
+					<!-- /> -->
+								<!-- </div> -->
+<!--  -->
+		<!--  -->
+				<!-- </div> -->
+				<!-- </div> -->
+					<!-- </div> -->
+		<!-- </div> -->
+					<!-- </div> -->
+		<!-- </section> -->
+				<!-- <div className="elementor-element elementor-element-468fd21 elementor-widget elementor-widget-mf-textarea" data-id="468fd21" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-textarea&quot;}" data-widget_type="mf-textarea.default"> -->
+				<!-- <div className="elementor-widget-container"> -->
+			<!--  -->
+		<!-- <div className="mf-input-wrapper"> -->
+			<!--  -->
+			<!-- <textarea className="mf-input mf-textarea " id="mf-input-text-area-468fd21" -->
+				<!-- name="mf-textarea"  -->
+				<!-- placeholder="${ parent.decodeEntities(`Message`) } " -->
+				<!-- cols="30" rows="10" -->
+									<!-- onInput=${ parent.handleChange } -->
+					<!-- aria-invalid=${validation.errors['mf-textarea'] ? 'true' : 'false'} -->
+					<!-- ref=${ el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)} -->
+								<!-- ></textarea> -->
+<!--  -->
+							<!-- <${validation.ErrorMessage} -->
+					<!-- errors=${validation.errors} -->
+					<!-- name="mf-textarea" -->
+					<!-- as=${html`<span className="mf-error-message"></span>`} -->
+					<!-- /> -->
+								<!-- </div> -->
+<!--  -->
+				<!-- </div> -->
+				<!-- </div> -->
+				<!-- <div className="elementor-element elementor-element-ab0b3f8 mf-btn--left mf-btn--mobile-justify elementor-widget elementor-widget-mf-button" data-id="ab0b3f8" data-element_type="widget" data-widget_type="mf-button.default"> -->
+				<!-- <div className="elementor-widget-container"> -->
+					<!-- <div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement=""> -->
+							<!-- <button type="submit" className="metform-btn metform-submit-btn " id=""> -->
+					<!-- <span>${ parent.decodeEntities(`Submit Button`) } </span> -->
+				<!-- </button> -->
+			<!--         </div> -->
+        <!-- 		</div> -->
+				<!-- </div> -->
+					<!-- </div> -->
+		<!-- </div> -->
+					<!-- </div> -->
+		<!-- </section> -->
+				<!-- </div> -->
+							<!-- `} -->
+					<!-- </div> -->
+<!--  -->
+					<!-- ${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''} -->
+					<!-- ${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''} -->
+				<!--  -->
+				<!-- </form> -->
+			<!-- ` -->
+		<!-- </script> -->
+<!--  -->
+													<!-- </div> -->
+												<!-- </div> -->
+											<!-- </div> </div> -->
+									<!-- </div> -->
+								<!-- </div> -->
+							<!-- </div> -->
+							<!-- <div -->
+								<!-- class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3ada83c" -->
+								<!-- data-id="3ada83c" data-element_type="column"> -->
+								<!-- <div class="elementor-widget-wrap elementor-element-populated"> -->
+									<!-- <div -->
+										<!-- class="elementor-element elementor-element-3982e50 animated-slow elementor-invisible elementor-widget elementor-widget-elementskit-heading" -->
+										<!-- data-id="3982e50" data-element_type="widget" -->
+										<!-- data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}" -->
+										<!-- data-widget_type="elementskit-heading.default"> -->
+										<!-- <div class="elementor-widget-container"> -->
+											<!-- <div class="ekit-wid-con"><div -->
+													<!-- class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-text_center"><h2 -->
+														<!-- class="ekit-heading--title elementskit-section-title ">Experience -->
+														<!-- <span><span>Luxury</span></span> In The Cottage</h2></div></div> -->
+										<!-- </div> -->
+									<!-- </div> -->
+									<!-- <div -->
+										<!-- class="elementor-element elementor-element-965cba7 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" -->
+										<!-- data-id="965cba7" data-element_type="widget" -->
+										<!-- data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" -->
+										<!-- data-widget_type="text-editor.default"> -->
+										<!-- <div class="elementor-widget-container"> -->
+											<!-- <p>Experience luxury in the serene settings of the Cottage, a part of -->
+												<!-- the Guide Kadalundi chain of resorts nestled in and around the -->
+												<!-- picturesque Kadalundi region. Immerse yourself in the tranquil -->
+												<!-- beauty -->
+												<!-- of nature as you embark on a journey filled with boating adventures, -->
+												<!-- captivating visits to the mangrove forests, and explorations of the -->
+												<!-- historic Beypore port. Our resort offers an array of experiences, -->
+												<!-- including team-building activities amidst the breathtaking -->
+												<!-- landscapes, ensuring a truly unforgettable getaway for all. Indulge -->
+												<!-- in the essence of luxury while surrendering to the natural wonders -->
+												<!-- of -->
+												<!-- Kadalundi with us.</p> </div> -->
+									<!-- </div> -->
+									<!-- <section -->
+										<!-- class="elementor-section elementor-inner-section elementor-element elementor-element-9c942ec elementor-section-boxed elementor-section-height-default elementor-section-height-default" -->
+										<!-- data-id="9c942ec" data-element_type="section"> -->
+										<!-- <div class="elementor-container elementor-column-gap-default"> -->
+											<!-- <div -->
+												<!-- class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ec2760d" -->
+												<!-- data-id="ec2760d" data-element_type="column"> -->
+												<!-- <div class="elementor-widget-wrap elementor-element-populated"> -->
+													<!-- <div -->
+														<!-- class="elementor-element elementor-element-98be51a elementor-mobile-align-center animated-slow elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list" -->
+														<!-- data-id="98be51a" data-element_type="widget" -->
+														<!-- data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:700}" -->
+														<!-- data-widget_type="icon-list.default"> -->
+														<!-- <div class="elementor-widget-container"> -->
+															<!-- <link rel="stylesheet" -->
+																<!-- href="wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"> -->
+															<!-- <ul class="elementor-icon-list-items"> -->
+																<!-- <li class="elementor-icon-list-item"> -->
+																	<!-- <span class="elementor-icon-list-icon"> -->
+																		<!-- <i aria-hidden="true" class="fas fa-arrow-circle-right"></i> -->
+																	<!-- </span> -->
+																	<!-- <span class="elementor-icon-list-text">Our Cottages</span> -->
+																<!-- </li> -->
+																<!-- <li class="elementor-icon-list-item"> -->
+																	<!-- <span class="elementor-icon-list-icon"> -->
+																		<!-- <i aria-hidden="true" class="fas fa-arrow-circle-right"></i> -->
+																	<!-- </span> -->
+																	<!-- <span class="elementor-icon-list-text">Blogs</span> -->
+																<!-- </li> -->
+																<!-- <li class="elementor-icon-list-item"> -->
+																	<!-- <span class="elementor-icon-list-icon"> -->
+																		<!-- <i aria-hidden="true" class="fas fa-arrow-circle-right"></i> -->
+																	<!-- </span> -->
+																	<!-- <span class="elementor-icon-list-text">Mangrove forest visit -->
+																	<!-- </span> -->
+																<!-- </li> -->
+															<!-- </ul> -->
+														<!-- </div> -->
+													<!-- </div> -->
+												<!-- </div> -->
+											<!-- </div> -->
+											<!-- <div -->
+												<!-- class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a09213f elementor-hidden-tablet" -->
+												<!-- data-id="a09213f" data-element_type="column"> -->
+												<!-- <div class="elementor-widget-wrap elementor-element-populated"> -->
+													<!-- <div -->
+														<!-- class="elementor-element elementor-element-e7a4f13 elementor-mobile-align-center animated-slow elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list" -->
+														<!-- data-id="e7a4f13" data-element_type="widget" -->
+														<!-- data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:900}" -->
+														<!-- data-widget_type="icon-list.default"> -->
+														<!-- <div class="elementor-widget-container"> -->
+															<!-- <ul class="elementor-icon-list-items"> -->
+																<!-- <li class="elementor-icon-list-item"> -->
+																	<!-- <span class="elementor-icon-list-icon"> -->
+																		<!-- <i aria-hidden="true" class="fas fa-arrow-circle-right"></i> -->
+																	<!-- </span> -->
+																	<!-- <span class="elementor-icon-list-text">Outbound With -->
+																		<!-- Team</span> -->
+																<!-- </li> -->
+																<!-- <li class="elementor-icon-list-item"> -->
+																	<!-- <span class="elementor-icon-list-icon"> -->
+																		<!-- <i aria-hidden="true" class="fas fa-arrow-circle-right"></i> -->
+																	<!-- </span> -->
+																	<!-- <span class="elementor-icon-list-text">cupidatat non -->
+																		<!-- proident</span> -->
+																<!-- </li> -->
+																<!-- <li class="elementor-icon-list-item"> -->
+																	<!-- <span class="elementor-icon-list-icon"> -->
+																		<!-- <i aria-hidden="true" class="fas fa-arrow-circle-right"></i> -->
+																	<!-- </span> -->
+																	<!-- <span class="elementor-icon-list-text">Beypore port -->
+																		<!-- visit</span> -->
+																<!-- </li> -->
+															<!-- </ul> -->
+														<!-- </div> -->
+													<!-- </div> -->
+												<!-- </div> -->
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </section> -->
+									<!-- <div -->
+										<!-- class="elementor-element elementor-element-79dbd7c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" -->
+										<!-- data-id="79dbd7c" data-element_type="widget" -->
+										<!-- data-widget_type="divider.default"> -->
+										<!-- <div class="elementor-widget-container"> -->
+											<!-- <style>/*! elementor - v3.19.0 - 29-01-2024 */ -->
+<!-- .elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style> -->
+											<!-- <div class="elementor-divider"> -->
+												<!-- <span class="elementor-divider-separator"> -->
+												<!-- </span> -->
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </div> -->
+									<!-- <section -->
+										<!-- class="elementor-section elementor-inner-section elementor-element elementor-element-3a59c78 elementor-section-boxed elementor-section-height-default elementor-section-height-default" -->
+										<!-- data-id="3a59c78" data-element_type="section"> -->
+										<!-- <div class="elementor-container elementor-column-gap-default"> -->
+											<!-- <div -->
+												<!-- class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-48cca56" -->
+												<!-- data-id="48cca56" data-element_type="column"> -->
+												<!-- <div class="elementor-widget-wrap elementor-element-populated"> -->
+													<!-- <div -->
+														<!-- class="elementor-element elementor-element-b9eb34a animated-slow elementor-invisible elementor-widget elementor-widget-heading" -->
+														<!-- data-id="b9eb34a" data-element_type="widget" -->
+														<!-- data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1100}" -->
+														<!-- data-widget_type="heading.default"> -->
+														<!-- <div class="elementor-widget-container"> -->
+															<!-- <h4 class="elementor-heading-title elementor-size-default">Social -->
+																<!-- Media :</h4> </div> -->
+													<!-- </div> -->
+												<!-- </div> -->
+											<!-- </div> -->
+											<!-- <div -->
+												<!-- class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-51ae3ae" -->
+												<!-- data-id="51ae3ae" data-element_type="column"> -->
+												<!-- <div class="elementor-widget-wrap elementor-element-populated"> -->
+													<!-- <div -->
+														<!-- class="elementor-element elementor-element-47ebe0e e-grid-align-right animated-slow elementor-shape-rounded elementor-grid-0 elementor-invisible elementor-widget elementor-widget-social-icons" -->
+														<!-- data-id="47ebe0e" data-element_type="widget" -->
+														<!-- data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1300}" -->
+														<!-- data-widget_type="social-icons.default"> -->
+														<!-- <div class="elementor-widget-container"> -->
+															<!-- <style>/*! elementor - v3.19.0 - 29-01-2024 */ -->
+<!-- .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));height:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#69727d;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#69727d}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style> -->
+															<!-- <div class="elementor-social-icons-wrapper elementor-grid"> -->
+																<!-- <span class="elementor-grid-item"> -->
+																	<!-- <a -->
+																		<!-- class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-c07fd74" -->
+																		<!-- target="_blank"> -->
+																		<!-- <span class="elementor-screen-only">Facebook</span> -->
+																		<!-- <i class="fab fa-facebook"></i> </a> -->
+																<!-- </span> -->
+																<!-- <span class="elementor-grid-item"> -->
+																	<!-- <a href="https://wa.me/919847692052" -->
+																		<!-- class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-c3e9908" -->
+																		<!-- target="_blank"> -->
+																		<!-- <span class="elementor-screen-only">WhatsApp</span> -->
+																		<!-- <i class="fab fa-whatsapp"></i> </a> -->
+																<!-- </span> -->
+																<!-- <span class="elementor-grid-item"> -->
+																	<!-- <a -->
+																		<!-- class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5718aaa" -->
+																		<!-- target="_blank"> -->
+<!--  -->
+																		<!-- <span class="elementor-screen-only">Youtube</span> -->
+																		<!-- <i class="fab fa-youtube"></i> </a> -->
+																<!-- </span> -->
+																<!-- <span class="elementor-grid-item"> -->
+																	<!-- <a -->
+																		<!-- class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-5718aaa" -->
+																		<!-- target="_blank"> -->
+																		<!-- <span class="elementor-screen-only">Instagarm</span> -->
+																		<!-- <i class="fab fa-instagram"></i> </a> -->
+																<!-- </span> -->
+<!--  -->
+															<!-- </div> -->
+														<!-- </div> -->
+													<!-- </div> -->
+												<!-- </div> -->
+											<!-- </div> -->
+										<!-- </div> -->
+									<!-- </section> -->
+								<!-- </div> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </section> -->
 					<section
 						class="elementor-section elementor-top-section elementor-element elementor-element-51a2217 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 						data-id="51a2217" data-element_type="section">
@@ -2485,6 +2485,222 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 																		</div>
 																		<div class="col-lg-4 col-md-6">
 
+																			<div class="elementskit-post-image-card">
+																				<div class="elementskit-entry-header">
+																					<a href="index.html@p=863.html"
+																						class="elementskit-entry-thumb">
+																						<img decoding="async"
+																							src="wp-content/uploads/sites/190/2023/09/a-cabin-in-woods-in-the-smoke-2021-08-29-21-04-49-utc-copy-1024x683.jpg"
+																							alt="Reap a natural home">
+																					</a><!-- .elementskit-entry-thumb END -->
+
+																				</div><!-- .elementskit-entry-header END -->
+
+																				<div class="elementskit-post-body ">
+
+																					<h2 class="entry-title">
+																						<a href="index.html@p=863.html">
+																							Reap a natural home </a>
+																					</h2>
+																					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																						sed do eiusmod&hellip;</p>
+																					<div class="btn-wraper">
+																						<a href="index.html@p=863.html"
+																							class="elementskit-btn  whitespace--normal">
+																							Learn more <i aria-hidden="true"
+																								class="fas fa-long-arrow-alt-right"></i> </a>
+
+																					</div>
+																				</div><!-- .elementskit-post-body END -->
+																			</div>
+
+																		</div>
+																		<div class="col-lg-4 col-md-6">
+
+																			<div class="elementskit-post-image-card">
+																				<div class="elementskit-entry-header">
+																					<a href="index.html@p=863.html"
+																						class="elementskit-entry-thumb">
+																						<img decoding="async"
+																							src="wp-content/uploads/sites/190/2023/09/a-cabin-in-woods-in-the-smoke-2021-08-29-21-04-49-utc-copy-1024x683.jpg"
+																							alt="Reap a natural home">
+																					</a><!-- .elementskit-entry-thumb END -->
+
+																				</div><!-- .elementskit-entry-header END -->
+
+																				<div class="elementskit-post-body ">
+
+																					<h2 class="entry-title">
+																						<a href="index.html@p=863.html">
+																							Reap a natural home </a>
+																					</h2>
+																					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																						sed do eiusmod&hellip;</p>
+																					<div class="btn-wraper">
+																						<a href="index.html@p=863.html"
+																							class="elementskit-btn  whitespace--normal">
+																							Learn more <i aria-hidden="true"
+																								class="fas fa-long-arrow-alt-right"></i> </a>
+
+																					</div>
+																				</div><!-- .elementskit-post-body END -->
+																			</div>
+
+																		</div>
+																		<div class="col-lg-4 col-md-6">
+
+																			<div class="elementskit-post-image-card">
+																				<div class="elementskit-entry-header">
+																					<a href="index.html@p=863.html"
+																						class="elementskit-entry-thumb">
+																						<img decoding="async"
+																							src="wp-content/uploads/sites/190/2023/09/a-cabin-in-woods-in-the-smoke-2021-08-29-21-04-49-utc-copy-1024x683.jpg"
+																							alt="Reap a natural home">
+																					</a><!-- .elementskit-entry-thumb END -->
+
+																				</div><!-- .elementskit-entry-header END -->
+
+																				<div class="elementskit-post-body ">
+
+																					<h2 class="entry-title">
+																						<a href="index.html@p=863.html">
+																							Reap a natural home </a>
+																					</h2>
+																					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																						sed do eiusmod&hellip;</p>
+																					<div class="btn-wraper">
+																						<a href="index.html@p=863.html"
+																							class="elementskit-btn  whitespace--normal">
+																							Learn more <i aria-hidden="true"
+																								class="fas fa-long-arrow-alt-right"></i> </a>
+
+																					</div>
+																				</div><!-- .elementskit-post-body END -->
+																			</div>
+
+																		</div>
+																		<div class="col-lg-4 col-md-6">
+
+																			<div class="elementskit-post-image-card">
+																				<div class="elementskit-entry-header">
+																					<a href="index.html@p=863.html"
+																						class="elementskit-entry-thumb">
+																						<img decoding="async"
+																							src="wp-content/uploads/sites/190/2023/09/a-cabin-in-woods-in-the-smoke-2021-08-29-21-04-49-utc-copy-1024x683.jpg"
+																							alt="Reap a natural home">
+																					</a><!-- .elementskit-entry-thumb END -->
+
+																				</div><!-- .elementskit-entry-header END -->
+
+																				<div class="elementskit-post-body ">
+
+																					<h2 class="entry-title">
+																						<a href="index.html@p=863.html">
+																							Reap a natural home </a>
+																					</h2>
+																					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																						sed do eiusmod&hellip;</p>
+																					<div class="btn-wraper">
+																						<a href="index.html@p=863.html"
+																							class="elementskit-btn  whitespace--normal">
+																							Learn more <i aria-hidden="true"
+																								class="fas fa-long-arrow-alt-right"></i> </a>
+
+																					</div>
+																				</div><!-- .elementskit-post-body END -->
+																			</div>
+
+																		</div>
+																		<div class="col-lg-4 col-md-6">
+
+																			<div class="elementskit-post-image-card">
+																				<div class="elementskit-entry-header">
+																					<a href="index.html@p=863.html"
+																						class="elementskit-entry-thumb">
+																						<img decoding="async"
+																							src="wp-content/uploads/sites/190/2023/09/a-cabin-in-woods-in-the-smoke-2021-08-29-21-04-49-utc-copy-1024x683.jpg"
+																							alt="Reap a natural home">
+																					</a><!-- .elementskit-entry-thumb END -->
+
+																				</div><!-- .elementskit-entry-header END -->
+
+																				<div class="elementskit-post-body ">
+
+																					<h2 class="entry-title">
+																						<a href="index.html@p=863.html">
+																							Reap a natural home </a>
+																					</h2>
+																					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																						sed do eiusmod&hellip;</p>
+																					<div class="btn-wraper">
+																						<a href="index.html@p=863.html"
+																							class="elementskit-btn  whitespace--normal">
+																							Learn more <i aria-hidden="true"
+																								class="fas fa-long-arrow-alt-right"></i> </a>
+
+																					</div>
+																				</div><!-- .elementskit-post-body END -->
+																			</div>
+
+																		</div>
+																		<div class="col-lg-4 col-md-6">
+
+																			<div class="elementskit-post-image-card">
+																				<div class="elementskit-entry-header">
+																					<a href="index.html@p=860.html"
+																						class="elementskit-entry-thumb">
+																						<img decoding="async"
+																							src="wp-content/uploads/sites/190/2023/09/old-log-cabin-in-the-forest-2022-12-17-04-09-54-utc-copy-1024x683.jpg"
+																							alt="Life in harmony">
+																					</a><!-- .elementskit-entry-thumb END -->
+
+																				</div><!-- .elementskit-entry-header END -->
+
+																				<div class="elementskit-post-body ">
+
+																					<h2 class="entry-title">
+																						<a href="index.html@p=860.html">
+																							Life in harmony </a>
+																					</h2>
+																					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																						sed do eiusmod&hellip;</p>
+																					<div class="btn-wraper">
+																						<a href="index.html@p=860.html"
+																							class="elementskit-btn  whitespace--normal">
+																							Learn more <i aria-hidden="true"
+																								class="fas fa-long-arrow-alt-right"></i> </a>
+
+																					</div>
+																				</div><!-- .elementskit-post-body END -->
+																			</div>
+																			<div class="elementskit-post-image-card">
+																				<div class="elementskit-entry-header">
+																					<a href="index.html@p=860.html"
+																						class="elementskit-entry-thumb">
+																						<img decoding="async"
+																							src="wp-content/uploads/sites/190/2023/09/old-log-cabin-in-the-forest-2022-12-17-04-09-54-utc-copy-1024x683.jpg"
+																							alt="Life in harmony">
+																					</a><!-- .elementskit-entry-thumb END -->
+
+																				</div><!-- .elementskit-entry-header END -->
+
+																				<div class="elementskit-post-body ">
+
+																					<h2 class="entry-title">
+																						<a href="index.html@p=860.html">
+																							Life in harmony </a>
+																					</h2>
+																					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																						sed do eiusmod&hellip;</p>
+																					<div class="btn-wraper">
+																						<a href="index.html@p=860.html"
+																							class="elementskit-btn  whitespace--normal">
+																							Learn more <i aria-hidden="true"
+																								class="fas fa-long-arrow-alt-right"></i> </a>
+
+																					</div>
+																				</div><!-- .elementskit-post-body END -->
+																			</div>
 																			<div class="elementskit-post-image-card">
 																				<div class="elementskit-entry-header">
 																					<a href="index.html@p=860.html"
