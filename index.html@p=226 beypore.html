@@ -1628,101 +1628,7 @@
 		--------------------------- -->
 
 																<script type="text/mf" class="mf-template">
-			function controls_data (value){
-				let currentWrapper = "mf-response-props-id-680";
-				let currentEl = document.getElementById(currentWrapper);
-				
-				return currentEl ? currentEl.dataset[value] : false
-			}
-
-
-			let is_edit_mode = '' ? true : false;
-			let message_position = controls_data('messageposition') || 'top';
-
 			
-			let message_successIcon = controls_data('successicon') || '';
-			let message_errorIcon = controls_data('erroricon') || '';
-			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
-			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
-			
-			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
-
-			
-			return html`
-				<form
-					className="metform-form-content"
-					ref=${parent.formContainerRef}
-					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
-				
-					>
-			
-			
-					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-
-					<!--------------------------------------------------------
-					*** IMPORTANT / DANGEROUS ***
-					${html``} must be used as in immediate child of "metform-form-main-wrapper"
-					class otherwise multistep form will not run at all
-					---------------------------------------------------------->
-
-					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
-					${html`
-								<div data-elementor-type="wp-post" key="2" data-elementor-id="680" className="elementor elementor-680">
-						<section className="elementor-section elementor-top-section elementor-element elementor-element-3c8d7f5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3c8d7f5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-64ac592" data-id="64ac592" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-						<div className="elementor-element elementor-element-8c7396d elementor-widget elementor-widget-mf-email" data-id="8c7396d" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}" data-widget_type="mf-email.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-			
-			<input 
-				type="email" 
-				 
-				defaultValue="" 
-				className="mf-input " 
-				id="mf-input-email-8c7396d" 
-				name="mf-email" 
-				placeholder="${ parent.decodeEntities(`Email`) } " 
-				 
-				onBlur=${parent.handleChange} onFocus=${parent.handleChange} aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false' } 
-				ref=${el=> parent.activateValidation({"message":"This field is required.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
-							/>
-
-						<${validation.ErrorMessage} 
-				errors=${validation.errors} 
-				name="mf-email" 
-				as=${html`<span className="mf-error-message"></span>`}
-			/>
-			
-					</div>
-
-		</div>
-				</div>
-				<div className="elementor-element elementor-element-205780c mf-btn--justify mf-btn--tablet-justify mf-btn--mobile-justify elementor-widget elementor-widget-mf-button" data-id="205780c" data-element_type="widget" data-widget_type="mf-button.default">
-				<div className="elementor-widget-container">
-					<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
-							<button type="submit" className="metform-btn metform-submit-btn " id="">
-					<span>${ parent.decodeEntities(`Submit Button`) } </span>
-				</button>
-			        </div>
-        		</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-							`}
-					</div>
-
-					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-				
-				</form>
-			`
 		</script>
 
 															</div>
@@ -1745,8 +1651,7 @@
 												data-id="a77ec72" data-element_type="widget"
 												data-widget_type="heading.default">
 												<div class="elementor-widget-container">
-													<h3 class="elementor-heading-title elementor-size-default">Our
-														Categories :</h3>
+													<h3 class="elementor-heading-title elementor-size-default">Other Blogs:</h3>
 												</div>
 											</div>
 											<div class="elementor-element elementor-element-baa0f29 elementor-widget elementor-widget-text-editor"
@@ -1762,35 +1667,32 @@
 												<div class="elementor-widget-container">
 													<link rel="stylesheet"
 														href="wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
-													<ul class="elementor-icon-list-items">
-														<li class="elementor-icon-list-item">
-															<span class="elementor-icon-list-icon">
-																<i aria-hidden="true" class="fas fa-arrow-right"></i>
-															</span>
-															<span class="elementor-icon-list-text" ><a href="index.html@p=227.html">Kadalundi</a> </span>
-														</li>
-														<li class="elementor-icon-list-item">
-															<span class="elementor-icon-list-icon">
-																<i aria-hidden="true" class="fas fa-arrow-right"></i>
-															</span>
-															<span class="elementor-icon-list-text">illum qui
-																dolorem</span>
-														</li>
-														<li class="elementor-icon-list-item">
-															<span class="elementor-icon-list-icon">
-																<i aria-hidden="true" class="fas fa-arrow-right"></i>
-															</span>
-															<span class="elementor-icon-list-text">fugiat quo
-																voluptas</span>
-														</li>
-														<li class="elementor-icon-list-item">
-															<span class="elementor-icon-list-icon">
-																<i aria-hidden="true" class="fas fa-arrow-right"></i>
-															</span>
-															<span class="elementor-icon-list-text">expound the
-																actual</span>
-														</li>
-													</ul>
+														<ul class="elementor-icon-list-items">
+															<li class="elementor-icon-list-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-arrow-right"></i>
+																</span>
+																<span class="elementor-icon-list-text" ><a href="index.html@p=227.html">Kadalundi</a> </span>
+															</li>
+															<li class="elementor-icon-list-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-arrow-right"></i>
+																</span>
+																<span class="elementor-icon-list-text"><a href="index.html@p=226 Deforestation.html">Deforestation</a></span>
+															</li>
+															<li class="elementor-icon-list-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-arrow-right"></i>
+																</span>
+																<span class="elementor-icon-list-text"><a href="index.html@p=226 mangrooves.html">The Mangrooves</a></span>
+															</li>
+															<li class="elementor-icon-list-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-arrow-right"></i>
+																</span>
+																<span class="elementor-icon-list-text"><a href="index.html@p=226 migrating_birds.html">Migrating Birds</a></span>
+															</li>
+														</ul>
 												</div>
 											</div>
 										</div>
@@ -1964,20 +1866,12 @@
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-text">Home</span>
 																</li>
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-text">Pages</span>
-																</li>
+																
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-text">About
 																		Us</span>
 																</li>
-																<li class="elementor-icon-list-item">
-																	<span
-																		class="elementor-icon-list-text">Services</span>
-																</li>
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-text">404</span>
-																</li>
+																
 															</ul>
 														</div>
 													</div>
@@ -2004,20 +1898,10 @@
 																	<span class="elementor-icon-list-text">Contact
 																		Us</span>
 																</li>
-																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-text">FAQs</span>
-																</li>
+																
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-text">Blog</span>
-																</li>
-																<li class="elementor-icon-list-item">
-																	<span
-																		class="elementor-icon-list-text">Gallery</span>
-																</li>
-																<li class="elementor-icon-list-item">
-																	<span
-																		class="elementor-icon-list-text">Pricing</span>
-																</li>
+															
 															</ul>
 														</div>
 													</div>
@@ -2030,9 +1914,7 @@
 														data-id="cb0e5ed" data-element_type="widget"
 														data-widget_type="heading.default">
 														<div class="elementor-widget-container">
-															<h2 class="elementor-heading-title elementor-size-default">
-																Work
-																Hours</h2>
+															
 														</div>
 													</div>
 													<div class="elementor-element elementor-element-2ff4210 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
@@ -2041,12 +1923,7 @@
 														<div class="elementor-widget-container">
 															<ul class="elementor-icon-list-items">
 																<li class="elementor-icon-list-item">
-																	<span class="elementor-icon-list-icon">
-																		<i aria-hidden="true" class="far fa-clock"></i>
-																	</span>
-																	<span class="elementor-icon-list-text">7 AM - 5 PM,
-																		Mon -
-																		Sat</span>
+																	
 																</li>
 															</ul>
 														</div>
